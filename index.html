@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HTML</title>
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+  <div class="app" id="app">
+    <input type="text" name="result" id="result" placeholder="result" readonly>
+    <input type="number" id="price" placeholder="write your price in $"/>
+    <span id="spa"></span>
+    <input type="text" name="text" id="dolar"/>
+   </div>
+   <div id="past">
+     <form id="form">
+       <label for="">Your Name</label>
+       <input type="text" name="info" id="name"><br>
+       <label for="">Your Age</label>
+       <input type="number" name="info" id="age"><br>
+       <label for="">Your Country</label>
+       <input type="text" name="info" id="country"><br>
+       <label for="">Your jobe</label>
+       <input type="text" name="info" id="jobe"><br>
+       <div id="sub">Submit</div>
+     </form>
+     <table id="table">
+       <tr>
+         <th>Name</th>
+         <td id="td1"></td>
+       </tr>
+       <tr>
+         <th>Age</th>
+         <td id="td2"></td>
+       </tr>
+       <tr>
+         <th>Country</th>
+         <td id="td3"></td>
+       </tr>
+       <tr>
+         <th>Jobe</th>
+         <td id="td4"></td>
+       </tr>
+     </table>
+   </div>
+   
+   <div class="selectcustom">
+    <select id="select"></select>
+    <input type="number" placeholder="Start" id="yourStart"/>
+    <input type="number" placeholder="End" id="yourEnd"/>
+    <button onclick="selectYears(yourStart.value,yourEnd.value)">Clac</button>
+   </div>
+   <script src="js/main.js"></script>
+ </body>
+</html>
